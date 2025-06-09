@@ -5,7 +5,7 @@ import 'package:dio/dio.dart';
 import 'package:project/constants.dart';
 
 class GemeniService {
-  final String apiKey = secretKey;
+  final String apiKey = secretkey;
 
   Future<Map<String, dynamic>?> sendImageToGemini(File image, String prompt) async {
     final dio = Dio();
