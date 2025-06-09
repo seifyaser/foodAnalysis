@@ -56,7 +56,9 @@ Respond ONLY with a valid JSON object (no extra text, no explanation). The objec
   "is_healthy": boolean    // true if the dish is generally considered healthy, false otherwise
 }
 For ingredients, provide only the names of the items (e.g. "olive oil", "onion") without quantities or measurements.
-If unsure, return your best guess.
+If unsure, return your best guess with no approximations.
+Give priority to Egyptian food when determining the name of the dish.
+If the name is big and has a lot of text, respond with the short name in the "name" field.
 If you see image not realted to food, respond with "not food" in the "name" field.
 Do NOT add any text before or after the JSON.
   ''');

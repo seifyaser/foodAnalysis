@@ -6,8 +6,9 @@ Widget nutritionDataColumn(Map<String, dynamic> nutritionData) => Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Nutritional Information",
+                            "📊  Nutritional Information",
                             style: TextStyle(
+                              fontSize: 18,
                               color: Colors.blueAccent,
                               fontWeight: FontWeight.bold,
                             ),

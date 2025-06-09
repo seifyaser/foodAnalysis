@@ -6,12 +6,14 @@ Widget ShowNameFood(dynamic nutritionData) =>   Column(
                   children: [
                     Text(
                       nutritionData["name"]?.toString() ?? "N/A",
-                      style: TextStyle(fontSize: 18, color: Colors.greenAccent),
+                      style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                        fontSize: 26, color: const Color.fromARGB(255, 255, 255, 255)),
                     ),
                     Text(
                       (nutritionData["is_healthy"] == true)
-                          ? "Healthy"
-                          : "Not Healthy",
+                          ? " ✔️  Healthy"
+                          : " ❌  Not Healthy",
                       style: TextStyle(
                         color:
                             (nutritionData["is_healthy"] == true)

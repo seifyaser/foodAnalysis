@@ -35,8 +35,8 @@ Widget bottomSheetDetails(
               'Food Analysis',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
+                fontSize: 28,
+                fontWeight: FontWeight.w800,
               ),
             ),
             SizedBox(height: 8),
@@ -67,8 +67,9 @@ Widget bottomSheetDetails(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Ingredients",
+                    "📜 Ingredients",
                     style: TextStyle(
+                      fontSize: 18,
                       color: Colors.orange,
                       fontWeight: FontWeight.bold,
                     ),
@@ -81,7 +82,7 @@ Widget bottomSheetDetails(
                         children: [
                           Icon(Icons.circle, size: 6, color: Colors.white70),
                           SizedBox(width: 6),
-                          Text(item, style: TextStyle(color: Colors.white70)),
+                          Text(item, style: TextStyle(color: Colors.white70, fontSize: 18, fontWeight: FontWeight.bold)),
                         ],
                       ),
                     ),
